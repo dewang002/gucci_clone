@@ -1,0 +1,84 @@
+.page5{
+    min-height: 80vh;
+    width: 100%;
+    z-index: 10;
+}
+.page5 h1{
+    margin: 4vw 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 300;
+}
+.page5 .container{
+    margin-left: 10%;
+    padding-top: 1vw;
+    max-width: 80%;
+    min-height: 64vh;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.card{
+    min-height: 100%;
+    max-width: 450px;
+}
+.card .content{
+    min-height: calc(100% - 400px);
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3vw 4rem;
+    gap: 1vw;
+}
+.card .content p{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 100;
+}
+.card .content h3{
+    font-weight: 100;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.content h4{
+    color: black;
+    font-size: 1rem;
+    font-weight: 100;
+    
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bgVideo{
+    max-width: 450px;
+    height: 400px;
+}
+@media (max-width:600px){
+    .page5{
+        margin-bottom: 2rem;
+        padding: 2vw;
+    }
+    .page5 h1{
+        text-align: center;
+    }
+    .page5 .container{
+        flex-direction: column;
+        max-width: 100%;
+        margin-left: 0%;
+    }
+    .card .content{
+        padding: 0vw 0rem;
+    }
+    .bgVideo{
+        margin-bottom: 4vw;
+    }
+    .content h4{
+      border-bottom: 1px solid black;
+      line-height: 0.8rem;
+    }
+}
